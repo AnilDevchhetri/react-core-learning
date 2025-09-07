@@ -1,5 +1,5 @@
 
 //use for popup
-export function Modal() {
+export default function Modal() {
     return
 }
