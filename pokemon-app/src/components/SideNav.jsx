@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { first151Pokemon, getFullPokedexNumber } from "../utils" //in unitl i has index.js as it is the defualt file to export so it use index.js here
 export default function SideNav(props) {
-    const { selectedPokemon, setSelectedPokemon, hanldeToggleMenu, showSideMenu } = props
+    const { selectedPokemon, setSelectedPokemon, showSideMenu, handleCloseMenu } = props
     const [searchValue, setSearchValue] = useState('')
 
     const filteredPokemn = first151Pokemon.filter((ele, eleIndex) => {
@@ -19,7 +19,7 @@ export default function SideNav(props) {
         )}>
             <div className={"header" + (!showSideMenu ? " open" : ' '
             )}>
-                <button onClick={hanldeToggleMenu} className="open-nav-button"><i className="fa-solid fa-arrow-left"></i></button>
+                <button onClick={handleCloseMenu} className="open-nav-button"><i className="fa-solid fa-arrow-left"></i></button>
                 <h1 className="text-gradient">Pokemon Card</h1>
             </div>
             <input placeholder="Eg. 001 or Bulba..." value={searchValue} onChange={(e) => { setSearchValue(e.target.value) }} />
@@ -27,7 +27,7 @@ export default function SideNav(props) {
                 filteredPokemn.map((pokemon, pokemonIndex) => {
                     const truePokedexNumber = first151Pokemon.indexOf(pokemon);
                     return (
-                        <button onClick={() => { setSelectedPokemon(truePokedexNumber) }} className={'nav-card' + (truePokedexNumber === selectedPokemon ? 'nav-card-selected' : '')} key={pokemonIndex} >
+                        <button onClick={() => { setSelectedPokemon(truePokedexNumber); handleCloseMenu(); }} className={'nav-card' + (truePokedexNumber === selectedPokemon ? 'nav-card-selected' : '')} key={pokemonIndex} >
                             {/* <p>{getFullPokedexNumber(pokemonIndex)} {pokemon}</p> */}
                             <p>{getFullPokedexNumber(truePokedexNumber)}</p>
                             <p> {pokemon}</p>
