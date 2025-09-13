@@ -94,9 +94,9 @@ export const pokemonTypeColors = {
 }
 
 
-export function getPokedexNumber(index) {
-    return index + 1
-}
+// export function getPokedexNumber(index) {
+//     return index + 1
+// }
 
 export function getFullPokedexNumber(index) {
     return `${index + 1 > 99 ? index + 1 : index + 1 > 9 ? `0${index + 1}` : `00${index + 1}`}`
