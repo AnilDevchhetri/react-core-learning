@@ -1,9 +1,15 @@
-https://www.youtube.com/watch?v=iKpkVKubvKk&ab_channel=Smoljames
 
-3:39
+
+
 
 
 
 //in react public directry is the defualt directy when searching for assets 
 //for exmapel if we have home slider and wants to use and in src se use src="slider/slider1.png" 
 this mean ther is a folrder name slider inside the public folder whhc we are uisng right now
+
+
+https://www.youtube.com/watch?v=TTx7Y3a7EmA&t=334s&ab_channel=SheryiansCodingSchool
+
+
+10:00
