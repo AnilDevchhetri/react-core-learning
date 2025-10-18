@@ -3,7 +3,8 @@ import Header from '../other/Header'
 import TaskListNumber from '../other/TaskListNumber'
 import TaskList from '../TaskList/TaskList'
 
-const EmployeeDashboard = () => {
+const EmployeeDashboard = (props) => {
+    console.log(props.data)
     return (
         <div className='p-10 bg-[#icicic] h-screen'>
             <Header />
