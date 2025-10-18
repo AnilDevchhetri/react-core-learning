@@ -1,8 +1,15 @@
 const employees = [
     {
         "id": "1",
-        "email": "employee1@gmail.com",
+        "firstName": "Alice",
+        "email": "e@gmail.com",
         "password": "123",
+        "taskCounts": {
+            "active": 2,
+            "newTask": 1,
+            "completed": 1,
+            "failed": 1
+        },
         "tasks": [
             {
                 "title": "Prepare sales report",
@@ -48,8 +55,15 @@ const employees = [
     },
     {
         "id": "2",
+        "firstName": "Brian",
         "email": "employee2@gmail.com",
         "password": "123",
+        "taskCounts": {
+            "active": 2,
+            "newTask": 1,
+            "completed": 1,
+            "failed": 0
+        },
         "tasks": [
             {
                 "title": "Organize team meeting",
@@ -85,8 +99,15 @@ const employees = [
     },
     {
         "id": "3",
+        "firstName": "Charlie",
         "email": "employee3@gmail.com",
         "password": "123",
+        "taskCounts": {
+            "active": 2,
+            "newTask": 1,
+            "completed": 2,
+            "failed": 1
+        },
         "tasks": [
             {
                 "title": "Fix login bug",
@@ -142,8 +163,15 @@ const employees = [
     },
     {
         "id": "4",
+        "firstName": "Diana",
         "email": "employee4@gmail.com",
         "password": "123",
+        "taskCounts": {
+            "active": 3,
+            "newTask": 1,
+            "completed": 0,
+            "failed": 0
+        },
         "tasks": [
             {
                 "title": "Prepare budget proposal",
@@ -179,8 +207,15 @@ const employees = [
     },
     {
         "id": "5",
+        "firstName": "Ethan",
         "email": "employee5@gmail.com",
         "password": "123",
+        "taskCounts": {
+            "active": 1,
+            "newTask": 1,
+            "completed": 2,
+            "failed": 1
+        },
         "tasks": [
             {
                 "title": "Server maintenance",
@@ -230,7 +265,8 @@ const admin = [
     {
         "id": "1",
         "email": "admin@example.com",
-        "password": "123"
+        "password": "123",
+        "firstName": "Admin"
     }
 ];
 
